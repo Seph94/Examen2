@@ -1,6 +1,7 @@
 package com.me.mygdxgame;
 
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
+import com.badlogic.gdx.scenes.scene2d.InputListener;
 
 public class InputPause extends InputListener {
 	Pause stop;
