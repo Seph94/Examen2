@@ -9,7 +9,10 @@ public class MiInputMala extends MiInput {
 		out = Out;
 	}
 	public boolean touchDown(InputEvent event, float x, float y, int pointer, int button){
+		if(!Pause.pausado)
+		{
 		out.setVisible(true);
+		}
 		return true;
 	}
 	

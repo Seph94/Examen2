@@ -6,9 +6,10 @@ import com.badlogic.gdx.scenes.scene2d.InputListener;
 public class InputPause extends InputListener {
 	Pause stop;
 	
-	InputPause()
+	InputPause(Pause a)
 	{
 		super();
+		stop = a;
 		
 	}
 	
@@ -17,6 +18,7 @@ public class InputPause extends InputListener {
 	{
 	
 		Pause.pausado =!Pause.pausado;
+
 	
 		return false;
 }	

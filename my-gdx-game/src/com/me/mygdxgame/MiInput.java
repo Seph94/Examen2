@@ -15,7 +15,10 @@ public class MiInput extends InputListener{
 	public boolean touchDown(InputEvent event, float x, float y, int pointer, int button)
 	{
 		//System.out.println(Math.random()*1000%100);
+		if(!Pause.pausado)
+		{
 		p.remove();
+		}
 		return true;
 	}
 }

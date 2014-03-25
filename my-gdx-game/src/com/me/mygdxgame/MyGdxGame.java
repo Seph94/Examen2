@@ -44,6 +44,7 @@ public class MyGdxGame implements ApplicationListener {
 	private Image i;
 	private Texture salir;
 	private Salida salida;
+	Pause alto;
 	Pelotita p;
 	ArrayList<Pelotita> pelotitas=new ArrayList<Pelotita>();
 	Stage s;
@@ -99,6 +100,11 @@ public class MyGdxGame implements ApplicationListener {
 		salida = new Salida ();
 		s.addActor(salida);
 		salida.setVisible(false);
+		
+		 alto = new Pause();
+		 s.addActor(alto);
+		 
+		 
 		
 		for(int i=0;i<3;i++)
 		{
